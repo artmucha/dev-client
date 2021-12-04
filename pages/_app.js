@@ -1,5 +1,4 @@
 
-import * as React from 'react';
 import Head from 'next/head';
 import { ThemeProvider } from '@mui/material/styles';
 import { CacheProvider } from '@emotion/react';
@@ -9,7 +8,7 @@ import GlobalStyles from 'styles/globalStyles';
 
 const clientSideEmotionCache = createEmotionCache();
 
-const App = props => {
+const ClientApp = props => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
 
   return (
@@ -26,4 +25,4 @@ const App = props => {
   );
 };
 
-export default App;
+export default ClientApp;
