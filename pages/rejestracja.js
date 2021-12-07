@@ -19,13 +19,13 @@ const Register = () => {
     <Container maxWidth="sm">
       <ContentStyle>
         <Stack sx={{ mb: 5 }}>
-          <Typography variant="h4" gutterBottom>Zarejestruj się</Typography>
+          <Typography variant="h4" align="center" gutterBottom>Zarejestruj się</Typography>
         </Stack>
 
-        <AuthForm type="register" />
+        <AuthForm type="register" apiURL="http://localhost:5000/api/users/signup" />
 
         <Typography variant="body2" align="center" sx={{ color: 'text.secondary', mt: 3 }}>
-          Rejestrując się potwierdzasz, że akceptujesz&nbsp;
+          Rejestrując się akceptujesz&nbsp;
           <Link underline="always" sx={{ color: 'text.primary' }}>
             Regulamin
           </Link>

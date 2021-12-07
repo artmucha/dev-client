@@ -19,10 +19,10 @@ const Login = () => {
     <Container maxWidth="sm">
       <ContentStyle>
         <Stack sx={{ mb: 5 }}>
-          <Typography variant="h4" gutterBottom>Zaloguj się</Typography>
+          <Typography variant="h4" align="center" gutterBottom>Zaloguj się</Typography>
         </Stack>
 
-        <AuthForm type="login" />
+        <AuthForm type="login" apiURL="http://localhost:5000/api/users/signin" />
 
         <Typography variant="body2" align="center" sx={{ mt: 3 }}>
           Nie masz jeszcze konta?&nbsp;

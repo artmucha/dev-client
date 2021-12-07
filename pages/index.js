@@ -11,8 +11,8 @@ const Home = () => {
         <Typography variant="h4" component="h1" gutterBottom>
           Home page
         </Typography>
-        <Link href="/about">
-          Go to the next page
+        <Link href="/logowanie">
+          <a>Zaloguj się</a>
         </Link>
       </Box>
     </Container>
