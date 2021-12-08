@@ -16,7 +16,7 @@ const responsiveFontSizes = ({ sm, md, lg }) => {
 	};
 };
 
-const FONT_PRIMARY = 'Nunito, sans-serif';
+const FONT_PRIMARY = 'Public Sans, sans-serif';
 
 const typography = {
 	fontFamily: FONT_PRIMARY,
