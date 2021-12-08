@@ -14,8 +14,9 @@ const ContentStyle = styled('div')(({ theme }) => ({
   padding: theme.spacing(12, 0)
 }));
 
-const Register = () => {
-  return (
+const Register = () => (
+  <>
+    <AuthLayout />
     <Container maxWidth="sm">
       <ContentStyle>
         <Stack sx={{ mb: 5 }}>
@@ -44,7 +45,7 @@ const Register = () => {
         </Typography>
       </ContentStyle>
     </Container>
-  );
-};
+  </>
+);
 
 export default Register;

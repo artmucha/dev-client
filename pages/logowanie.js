@@ -2,6 +2,7 @@ import { Link as NextLink } from 'next/link';
 import { styled } from '@mui/material/styles';
 import { Stack, Link, Container, Typography } from '@mui/material';
 
+import AuthLayout from 'layouts/AuthLayout';
 import AuthForm from 'components/AuthForm';
 
 const ContentStyle = styled('div')(({ theme }) => ({
@@ -14,8 +15,9 @@ const ContentStyle = styled('div')(({ theme }) => ({
   padding: theme.spacing(12, 0)
 }));
 
-const Login = () => {
-  return (
+const Login = () => (
+  <>
+    <AuthLayout />
     <Container maxWidth="sm">
       <ContentStyle>
         <Stack sx={{ mb: 5 }}>
@@ -32,7 +34,7 @@ const Login = () => {
         </Typography>
       </ContentStyle>
     </Container>
-  );
-};
+  </>
+);
 
 export default Login;
