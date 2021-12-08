@@ -2,6 +2,7 @@ import { Link as NextLink } from 'next/link';
 import { styled } from '@mui/material/styles';
 import { Stack, Link, Container, Typography } from '@mui/material';
 
+import AuthLayout from 'layouts/AuthLayout';
 import AuthForm from 'components/AuthForm';
 
 const ContentStyle = styled('div')(({ theme }) => ({
