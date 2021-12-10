@@ -5,6 +5,7 @@ import { Icon } from '@iconify/react';
 import menu2Fill from '@iconify/icons-eva/menu-2-fill';
 
 import MHidden from 'components/@material-extends/MHidden';
+import Searchbar from 'components/Searchbar';
 import AccountPopover from 'components/AccountPopover';
 
 const DRAWER_WIDTH = 280;
@@ -34,6 +35,7 @@ const Navigation = ({ onOpenSidebar }) => {
     <RootStyle>
       <ToolbarStyle>
 
+        <Searchbar />
         <Box sx={{ flexGrow: 1 }} />
 
         <Stack direction="row" alignItems="center" spacing={{ xs: 0.5, sm: 1.5 }}>
